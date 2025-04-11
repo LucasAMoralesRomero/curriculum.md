@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  #app {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  textarea {
+    width: 50%;
+    padding: 1rem;
+    border: none;
+    font-family: monospace;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+  }
+  
+  #preview {
+    width: 50%;
+    padding: 2rem;
+    overflow-y: auto;
+    border-left: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  .markdown-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .toolbar {
+    padding: 0.5rem 1rem;
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .toolbar button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  @media print {
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    textarea, .toolbar {
+      display: none;
+    }
+    #preview {
+      width: 100%;
+      border: none;
+      padding: 0;
+    }
+    .markdown-body {
+      padding: 1rem;
+    }
+  }
+  
