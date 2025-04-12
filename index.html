@@ -13,12 +13,33 @@
 <body>
   <div class="toolbar">
     <button onclick="window.print()">Exportar a PDF</button>
+    <button onclick="openAbout() ">Acerca de</button>
   </div>
   <div id="app">
     <textarea id="markdown" placeholder="Escribí tu CV en Markdown..."></textarea>
     <div id="preview" class="markdown-body"></div>
   </div>
+  <div id="aboutModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Acerca de Curriculum.md</h2>
+      <p>Herramienta simple para crear tu currículum en Markdown y exportarlo como PDF.</p>
+  
+      <p><strong>Versión:</strong> v0.1.0 – <a href="https://github.com/LucasAMoralesRomero/curriculum.md/blob/main/CHANGELOG.md" target="_blank">Ver changelog</a></p>
+  
+      <p><strong>Inspiración:</strong> <a href="https://md2pdf.netlify.app" target="_blank">md2pdf</a> de @realdennis</p>
+      
+      <p><strong>Tecnologías:</strong> <code>marked.js</code>, <code>github-markdown-css</code></p>
+      
+      <p><strong>Ícono:</strong> <a href="https://www.flaticon.com/free-icon/cv_3135800" target="_blank">Freepik en Flaticon</a></p>
+      
+      <p><strong>Repositorio:</strong> <a href="https://github.com/LucasAMoralesRomero/curriculum.md" target="_blank">Ver en GitHub</a></p>
+  
+      <p style="margin-top: 1rem;">⭐ Si te fue útil, considerá dejar <a href="https://github.com/LucasAMoralesRomero/curriculum.md" target="_blank">una estrellita en GitHub</a>. ¡Gracias!</p>
+      
 
+      <button onclick="closeAbout()">Cerrar</button>
+    </div>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>

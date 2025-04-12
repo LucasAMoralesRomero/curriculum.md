@@ -34,3 +34,11 @@ function updatePreview() {
 
 textarea.addEventListener('input', updatePreview);
 window.addEventListener('load', updatePreview);
+
+function openAbout() {
+    document.getElementById('aboutModal').classList.remove('hidden');
+  }
+  
+  function closeAbout() {
+    document.getElementById('aboutModal').classList.add('hidden');
+  }
